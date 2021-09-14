@@ -50,4 +50,8 @@ export class PostsService {
     // @ts-ignore
     return  this.http.delete(`${environment.fbDbUrl}/posts/${id}.json`)
   }
+
+  update(post: Post): Observable<Post> {
+    return this.http.patch<Post>(`${environment.fbDbUrl}/posts/${post.id}.json`, post)
+  }
 }
