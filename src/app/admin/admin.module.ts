@@ -1,5 +1,5 @@
 import {NgModule} from '@angular/core';
-import {CommonModule} from '@angular/common';
+import {CommonModule, registerLocaleData} from '@angular/common';
 import {RouterModule} from '@angular/router';
 
 import {AdminLayoutComponent} from './shared/components/admin-layout/admin-layout.component';
@@ -13,6 +13,7 @@ import {AuthGuard} from './shared/sevices/auth.guard';
 import {SearchPipe} from './shared/search.pipe';
 import { AlertComponent } from './shared/components/alert/alert.component';
 import {AlertService} from './shared/sevices/alert.service';
+
 
 @NgModule({
   declarations: [
